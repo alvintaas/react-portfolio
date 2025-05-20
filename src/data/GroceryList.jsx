@@ -1,7 +1,8 @@
+import PropTypes from "prop-types";
 
 function GroceryList(props) {
 
-    const { category } = props.category;
+    const  category  = props.category;
     const itemList = props.items;
   
 /*  const fruits = [{id: 1, name:'Apples', calories: 95},
@@ -24,9 +25,23 @@ function GroceryList(props) {
                                                 <b>{item.calories}</b></li>);
 
     return (<>
-                <h3 className="list-category">{category}</h3>
+                <div className="list-category"><h3>{category}</h3></div>
                 <ul className="list-items">{listItems}</ul>
             </>);
 }
+GroceryList.propTypes = {
+    category: PropTypes.string,
+    items: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number.isRequired,
+            name: PropTypes.string.isRequired,
+            calories: PropTypes.number.isRequired,
+        })
+    ).isRequired,
+}
+GroceryList.defaultProps = {
+    category: "Category",
+    items: [],
+};
 
 export default GroceryList;

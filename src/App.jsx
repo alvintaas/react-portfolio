@@ -5,6 +5,8 @@ import Card from "./Card.jsx";
 import UserGreeting from "./UserGreeting.jsx";
 import {studentData} from './data/studentData.js';
 import GroceryList from './data/GroceryList.jsx';
+import Button from "./Button.jsx";
+import ProfilePicture from "./ProfilePicture.jsx";
 
 function App() {
   
@@ -15,10 +17,10 @@ function App() {
                   {id: 3, name:'Coconut', calories: 283}];
 
   const vegetables = [{id: 1, name:'Potatoes', calories: 110},
-                  {id: 2, name:'Celery', calories: 15},
-                  {id: 4, name:'Carrot', calories: 25},
-                  {id: 3, name:'Corn', calories: 63},
-                  {id: 5, name:'Broccoli', calories: 50}];                  
+                      {id: 2, name:'Celery', calories: 15},
+                      {id: 4, name:'Carrot', calories: 25},
+                      {id: 3, name:'Corn', calories: 63},
+                      {id: 5, name:'Broccoli', calories: 50}];                  
 
   return(
     <>
@@ -48,11 +50,12 @@ function App() {
       
       <div>
         <h2 className="welcome-message">Grocery List</h2>
-          <GroceryList items={fruits} category="Fruits"></GroceryList>
-          <GroceryList items={vegetables} category="Vegetables"></GroceryList>
+          {fruits.length > 0 && <GroceryList items={fruits} category="Fruits"><h3>Fruits</h3></GroceryList> }
+          {vegetables.length > 0 && <GroceryList items={vegetables} category="Vegetables"><h3>Vegetables</h3></GroceryList>}
 
       </div>
-      
+      <ProfilePicture></ProfilePicture>
+      <Button> </Button>
 
       <Footer/>
     </>
