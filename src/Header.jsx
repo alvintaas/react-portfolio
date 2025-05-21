@@ -2,7 +2,7 @@
 function Header () {
     return (
         <header>
-            <h1>My Portfolio in React</h1>
+            <h1>Welcome to my React Sandbox!</h1>
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>

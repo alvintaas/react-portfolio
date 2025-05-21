@@ -34,7 +34,7 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 2.5em;
   line-height: 1.1;
 }
 
@@ -81,7 +81,7 @@ ul {
   padding: 25px;
   margin: 20px;
   text-align: center;
-  max-width: 250px;
+  max-width: 350px;
   display: inline-block
 }
 
@@ -101,9 +101,24 @@ ul {
   font-family:Arial, Helvetica, sans-serif;
 }
 
+.card-heading {
+  font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--primary-color);
+    font-size: 1.5em;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    width: 300px;
+    padding: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px
+}
+
 .student {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
   padding: 10px;
   border: 1px solid #000000;
 
@@ -116,7 +131,7 @@ ul {
 .welcome-message {
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--primary-color);
-  font-size: 2.5em;
+  font-size: 1.5em;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #000000;
@@ -133,17 +148,16 @@ ul {
 
 .list-category {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2em;
+  font-size: 1em;
   font-weight: bold;
   background-color: var(--secondary-color);
   color: #000000;
-  margin-bottom: 10px;
-  padding-left: 20px;;
+  text-align: left;
 }
 
 .list-items li{
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2em;
+  font-size: 1em;
 }
 
 .list-items li:hover {
@@ -151,3 +165,22 @@ ul {
   cursor: pointer;
 }
 
+.counter-container {
+  padding: 10px;
+  text-align: center;
+}
+
+.count-display {
+  font-size: 5em;
+  margin-top: -20px;
+  margin-bottom: 20px
+}
+
+.counter-button {
+  width: 100px;
+  font-size: 1.2em;
+}
+
+.counter-button:hover {
+  background-color: var(--secondary-color);
+}

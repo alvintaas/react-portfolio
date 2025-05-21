@@ -25,7 +25,7 @@ function GroceryList(props) {
                                                 <b>{item.calories}</b></li>);
 
     return (<>
-                <div className="list-category"><h3>{category}</h3></div>
+                <div className="card-heading"><h3>{category}</h3></div>
                 <ul className="list-items">{listItems}</ul>
             </>);
 }

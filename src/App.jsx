@@ -7,6 +7,9 @@ import {studentData} from './data/studentData.js';
 import GroceryList from './data/GroceryList.jsx';
 import Button from "./Button.jsx";
 import ProfilePicture from "./ProfilePicture.jsx";
+import MyComponent from "./MyComponent.jsx";
+import Counter from "./Counter.jsx";
+import MyComponent2 from "./MyComponent2.jsx";
 
 function App() {
   
@@ -48,14 +51,30 @@ function App() {
             */}
       </div>
       
-      <div>
-        <h2 className="welcome-message">Grocery List</h2>
+      <div className="card">
+        <h3 className="welcome-message">Grocery List</h3>
           {fruits.length > 0 && <GroceryList items={fruits} category="Fruits"><h3>Fruits</h3></GroceryList> }
           {vegetables.length > 0 && <GroceryList items={vegetables} category="Vegetables"><h3>Vegetables</h3></GroceryList>}
 
       </div>
-      <ProfilePicture></ProfilePicture>
-      <Button> </Button>
+
+      <div className="card">
+        <ProfilePicture></ProfilePicture>
+                <p>  </p>
+        <Button> </Button>
+      </div>
+      
+      <div className="card">
+        <MyComponent></MyComponent>
+      </div>
+
+      <div className="card">
+        <Counter> </Counter>
+      </div>
+
+      <div className="card">
+        <MyComponent2> </MyComponent2>
+      </div>
 
       <Footer/>
     </>
