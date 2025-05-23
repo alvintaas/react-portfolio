@@ -12,8 +12,8 @@ function GroceryList(props) {
                 ];
 */
   
-                //fruits.sort((a, b) => a.name.localeCompare(b.name));// ALPHABTICAL ORDER
-                //fruits.sort((a, b) => b.name.localeCompare(a.name)); // REVERSE ALPHABTICAL ORDER
+                //fruits.sort((a, b) => a.name.localeCompare(b.name));// ALPHABETICAL ORDER
+                //fruits.sort((a, b) => b.name.localeCompare(a.name)); // REVERSE ALPHABETICAL ORDER
                 //fruits.sort((a, b) => a.calories - b.calories);// CALORIES ORDER
 
     // const lowCalFruits = fruits.filter(fruit => fruit.calories < 100);
