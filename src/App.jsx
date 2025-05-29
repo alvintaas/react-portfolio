@@ -13,6 +13,7 @@ import MyComponent2 from "./MyComponent2.jsx";
 import MyComponent3 from "./MyComponent3.jsx";
 import UpdateStateArray from "./UpdateStateArray.jsx";
 import ToDoList from "./ToDoList.jsx";
+import MyComponent4 from "./MyComponent4.jsx";
 
 function App() {
   
@@ -89,6 +90,10 @@ function App() {
 
       <div className="card">
         <ToDoList></ToDoList>
+      </div>
+
+      <div className="card">
+        <MyComponent4></MyComponent4>
       </div>
       
       <Footer/>
