@@ -14,6 +14,7 @@ import MyComponent3 from "./MyComponent3.jsx";
 import UpdateStateArray from "./UpdateStateArray.jsx";
 import ToDoList from "./ToDoList.jsx";
 import MyComponent4 from "./MyComponent4.jsx";
+import DigitalClock from "./DigitalClock.jsx";
 
 function App() {
   
@@ -95,7 +96,11 @@ function App() {
       <div className="card">
         <MyComponent4></MyComponent4>
       </div>
-      
+
+               
+      <div className="card">
+        <DigitalClock></DigitalClock>
+      </div>
       <Footer/>
     </>
   );

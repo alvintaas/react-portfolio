@@ -290,3 +290,24 @@ button:focus-visible {
   font-size: 1.4rem;
   margin-left: 5px;
 }
+
+/* Digital Clock Styles */
+
+.clock-container {
+  background-image: url(./assets/DSC02978.JPG);
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(50px);
+  padding: 100px 0px;
+}
+
+.clock {
+  color: white;
+  font-size: 3em;
+  font-family: monospace;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  /*Optional*/
+  justify-content: center;
+  align-items: center;
+}
