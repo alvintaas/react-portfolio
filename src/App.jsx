@@ -15,6 +15,8 @@ import UpdateStateArray from "./UpdateStateArray.jsx";
 import ToDoList from "./ToDoList.jsx";
 import MyComponent4 from "./MyComponent4.jsx";
 import DigitalClock from "./DigitalClock.jsx";
+import ComponentA from "./ComponentA.jsx";
+import RefComponent from "./RefComponent.jsx";
 
 function App() {
   
@@ -99,8 +101,20 @@ function App() {
 
                
       <div className="card">
+      <h3 className="welcome-message">Digital Clock</h3>
         <DigitalClock></DigitalClock>
       </div>
+
+      <div className="card">
+        <h3 className="welcome-message">useContext() Hook</h3>
+        <ComponentA></ComponentA>
+      </div>
+
+      <div className="card">
+        <h3 className="welcome-message">useRef() Hook</h3>
+        <RefComponent></RefComponent>
+      </div>
+
       <Footer/>
     </>
   );
