@@ -17,6 +17,7 @@ import MyComponent4 from "./MyComponent4.jsx";
 import DigitalClock from "./DigitalClock.jsx";
 import ComponentA from "./ComponentA.jsx";
 import RefComponent from "./RefComponent.jsx";
+import Stopwatch from "./Stopwatch.jsx";
 
 function App() {
   
@@ -113,6 +114,11 @@ function App() {
       <div className="card">
         <h3 className="welcome-message">useRef() Hook</h3>
         <RefComponent></RefComponent>
+      </div>
+
+      <div className="card">
+        <h3 className="welcome-message">Stopwatch</h3>
+        <Stopwatch></Stopwatch>
       </div>
 
       <Footer/>

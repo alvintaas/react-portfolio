@@ -318,3 +318,63 @@ button:focus-visible {
   border: 3px solid ;
   padding: 10px;
 }
+
+/*Stopwatch */
+.stopwatch body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.stopwatch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid;
+  border-radius: 50px;
+  background-color: #ffffff6c;
+  padding: 30px;
+}
+
+.display {
+  font-size: 4rem;
+  font-family: monospace;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px hsl(0, 0%, 20%);
+  margin-bottom: 25px;
+}
+
+.controls button{
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 3px;
+  min-width: 85px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: hsl(0, 0%, 100%);
+  transition: background-color 0.5s ease;
+}
+.start-button {
+  background-color:hsl(125, 50%, 40%);
+}
+.start-button:hover {
+  background-color: hsl(125, 50%, 35%);
+}
+
+.stop-button {
+  background-color: hsl(0, 50%, 50%);
+}
+.stop-button:hover {
+  background-color: hsl(0, 50%, 45%);
+}
+
+.reset-button {
+  background-color: hsl(200, 50%, 50%);
+}
+.reset-button:hover {
+  background-color:  hsl(200, 50%, 45%);  ;
+}
